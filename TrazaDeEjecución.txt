@@ -1,0 +1,27 @@
+C:\Users\Eduardo\Documents\Programas ATOM\Laboratorio de sistemas\Práctica 3>ghdl -a Multiplier.vhdl HalfAdder.vhdl FullAdder.vhdl MUX.vhdl
+
+C:\Users\Eduardo\Documents\Programas ATOM\Laboratorio de sistemas\Práctica 3>ghdl -e Multiplier
+
+C:\Users\Eduardo\Documents\Programas ATOM\Laboratorio de sistemas\Práctica 3>ghdl -a Multiplier_tb.vhdl
+
+C:\Users\Eduardo\Documents\Programas ATOM\Laboratorio de sistemas\Práctica 3>ghdl -e Multiplier_tb
+
+C:\Users\Eduardo\Documents\Programas ATOM\Laboratorio de sistemas\Práctica 3>ghdl -r Multiplier_tb
+Multiplier_tb.vhdl:36:7:@110ns:(assertion error): Test ended correctly
+Multiplier_tb.vhdl:48:7:@210ns:(assertion error): Test ended correctly
+Multiplier_tb.vhdl:50:5:@250ns:(assertion note): end of test
+
+C:\Users\Eduardo\Documents\Programas ATOM\Laboratorio de sistemas\Práctica 3>ghdl -r Multiplier_tb --vcd=multiplierV.vcd
+Multiplier_tb.vhdl:36:7:@110ns:(assertion error): Test ended correctly
+Multiplier_tb.vhdl:48:7:@210ns:(assertion error): Test ended correctly
+Multiplier_tb.vhdl:50:5:@250ns:(assertion note): end of test
+
+C:\Users\Eduardo\Documents\Programas ATOM\Laboratorio de sistemas\Práctica 3>gtkwave multiplierV.vcd
+
+GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+
+[0] start time.
+[250000000] end time.
+WM Destroy
+
+C:\Users\Eduardo\Documents\Programas ATOM\Laboratorio de sistemas\Práctica 3>
